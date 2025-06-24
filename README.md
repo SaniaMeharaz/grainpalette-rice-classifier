@@ -48,7 +48,3 @@ We use **MobileNetV4** with transfer learning for feature extraction and a custo
 2.Install dependencies:
 ```bash
   pip install -r requirements.txt
-Train the model:
-  python train.py
-Evaluate or Predict:
-  python predict.py --image path_to_image.jpg
