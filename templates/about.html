@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About - GrainPalette</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="about-page">
+    <!-- ✅ Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-title">🌾 GrainPalette</div>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/predict">Predict</a>
+            <a href="/result">Result</a>
+            <a href="/contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- ✅ Content Section -->
+    <div class="hero-section">
+        <div class="card">
+            <h1>About This Project</h1>
+            <p>
+                GrainPalette is a deep learning-based web application that classifies rice types using transfer learning.
+                The model was trained on a variety of rice grain images including Basmati, Arborio, Jasmine, Karacadag, and Ipsala.
+                It uses MobileNetV2 architecture for accurate predictions with minimal latency.
+            </p>
+            <p>
+                This project showcases the power of AI in agriculture, helping automate and improve grain quality detection.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

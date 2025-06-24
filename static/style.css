@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* ✅ Page-specific backgrounds */
+body.home-page {
+    background-image: url("https://wallpaperaccess.com/full/453367.jpg");
+}
+
+body.about-page {
+    background-image: url("https://nutritionmeetsfoodscience.com/wp-content/uploads/2021/09/2.png");
+}
+
+body.predict-page {
+    background-image: url("https://nutritionmeetsfoodscience.com/wp-content/uploads/2021/09/3.png");
+}
+
+body.result-page {
+    background-image: url("https://thumbs.dreamstime.com/b/different-kinds-rice-grains-different-kinds-rice-grains-top-view-110660008.jpg");
+}
+
+body.contact-page {
+    background-image: url("https://montysplantfood.com/wp-content/uploads/2020/12/Rice-Field-2-2048x1365.jpg");
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2d6a4f;
+    padding: 15px 30px;
+    color: white;
+}
+
+.navbar .nav-title {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.navbar nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background-color: transparent;
+}
+
+.card {
+    background: rgba(198, 198, 198, 0.9);
+    border: 2px solid black;
+    margin: 30px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Form Styles */
+input[type="file"] {
+    padding: 10px;
+    background: #fff;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button {
+    background-color: #2d6a4f;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+/* Result Styles */
+.result-container {
+    text-align: center;
+    margin: 80px auto;
+}
+
+.result-container h2 {
+    color: #2d6a4f;
+}
+
+.image-preview img {
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2d6a4f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+}

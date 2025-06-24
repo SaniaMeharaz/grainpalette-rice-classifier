@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rice Type Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-title">🌾 Rice Type Classifier</div>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/">Predict</a>
+        </nav>
+    </header>
+
+    <div class="hero-section">
+        <div class="card">
+            <h1>Welcome to Rice Type Detection</h1>
+            <p>Upload a rice image to classify its type.</p>
+            <form action="/predict" method="post" enctype="multipart/form-data">
+                <input type="file" name="file" required><br>
+                <button type="submit">Predict</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

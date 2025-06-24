@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Predict Rice Type</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="predict-page">
+    <header class="navbar">
+        <div class="nav-title">🌾 GrainPalette</div>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/predict">Predict</a>
+            <a href="/result">Result</a>
+            <a href="/contact">Contact</a>
+        </nav>
+    </header>
+    <div class="hero-section">
+        <div class="card">
+            <h2 style="border: 2px solid black;background-color: rgb(171, 88, 37);color: rgb(255, 255, 255);border-radius: 20px;font-weight: bold;font-size: xx-large;">Upload an Image</h2>
+            <p></p>
+            <p>Upload a rice image to classify its type.</p>
+            <form action="/predict" method="post" enctype="multipart/form-data">
+                <input type="file" name="file" required><br>
+                <button type="submit">Predict</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

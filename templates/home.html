@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GrainPalette - Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="home-page">
+    <header class="navbar">
+        <div class="nav-title">🌾 GrainPalette</div>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/predict">Predict</a>
+            <a href="/result">Result</a>
+            <a href="/contact">Contact</a>
+        </nav>
+    </header>
+    <div class="hero-section">
+        <div class="card">
+            <h1>Welcome to GrainPalette</h1>
+            <p>A Deep Learning Odyssey in Rice Type Classification.</p>
+            <a href="/predict" class="btn">Start Classifying</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rice Type Classification Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="result-page">
+    <header class="navbar">
+        <div class="nav-title">🌾 GrainPalette</div>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/predict">Predict</a>
+            <a href="/result">Result</a>
+            <a href="/contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero-section">
+        <div class="card">
+            <h2 style="border: 2px solid black;background-color: rgb(171, 88, 37);color: rgb(255, 255, 255);border-radius: 20px;">Prediction Result</h2>
+            <p><strong>Predicted Rice Type:</strong> {{ predicted_class }}</p>
+            <p><strong>Confidence:</strong> {{ confidence }}%</p>
+
+            <!-- ✅ Clear image display (no blur) -->
+            <div class="image-preview">
+                <img src="{{ url_for('static', filename=image_url) }}"
+                     alt="Uploaded Rice Image"
+                     style="max-width: 100%; height: auto; border-radius: 10px;">
+            </div>
+
+            <a href="/predict" class="btn">🔁 Try Another Image</a>
+        </div>
+    </div>
+</body>
+</html>
