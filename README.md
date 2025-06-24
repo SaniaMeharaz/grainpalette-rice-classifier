@@ -46,10 +46,12 @@ We use **MobileNetV4** with transfer learning for feature extraction and a custo
    git clone https://github.com/<your-username>/grainpalette-rice-classifier.git
    cd grainpalette-rice-classifier
 2.Install dependencies:
-  ```bash
+```bash
   pip install -r requirements.txt
 3.Train the model:
+```bash
   python train.py
 4.Evaluate or Predict:
+```bash
   python predict.py --image path_to_image.jpg
 
