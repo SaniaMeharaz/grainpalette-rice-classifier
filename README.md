@@ -1,6 +1,7 @@
 # GrainPalette - Rice Type Classification Using Deep Learning
 
 GrainPalette is a deep learning-based project focused on classifying five types of rice grains using image data. This project is part of the SmartInternz Internship program and uses transfer learning with MobileNetV4 to achieve accurate classification.
+
 Demo Link: https://drive.google.com/file/d/1w-D8VCy1is-3SQLrTltZXtyhTXvDmsIe/view?usp=drive_link
 ---
 
